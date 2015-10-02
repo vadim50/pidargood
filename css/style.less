@@ -1,0 +1,397 @@
+/*!
+ * Bootstrap v3.3.4 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// Core variables and mixins
+@import "../bootstrap/less/variables.less";
+@import "../bootstrap/less/mixins.less";
+
+// Reset and dependencies
+@import "../bootstrap/less/normalize.less";
+@import "../bootstrap/less/print.less";
+@import "../bootstrap/less/glyphicons.less";
+
+// Core CSS
+@import "../bootstrap/less/scaffolding.less";
+@import "../bootstrap/less/type.less";
+@import "../bootstrap/less/code.less";
+@import "../bootstrap/less/grid.less";
+@import "../bootstrap/less/tables.less";
+@import "../bootstrap/less/forms.less";
+@import "../bootstrap/less/buttons.less";
+
+// Components
+@import "../bootstrap/less/component-animations.less";
+@import "../bootstrap/less/dropdowns.less";
+@import "../bootstrap/less/button-groups.less";
+@import "../bootstrap/less/input-groups.less";
+@import "../bootstrap/less/navs.less";
+@import "../bootstrap/less/navbar.less";
+@import "../bootstrap/less/breadcrumbs.less";
+@import "../bootstrap/less/pagination.less";
+@import "../bootstrap/less/pager.less";
+@import "../bootstrap/less/labels.less";
+@import "../bootstrap/less/badges.less";
+@import "../bootstrap/less/jumbotron.less";
+@import "../bootstrap/less/thumbnails.less";
+@import "../bootstrap/less/alerts.less";
+@import "../bootstrap/less/progress-bars.less";
+@import "../bootstrap/less/media.less";
+@import "../bootstrap/less/list-group.less";
+@import "../bootstrap/less/panels.less";
+@import "../bootstrap/less/responsive-embed.less";
+@import "../bootstrap/less/wells.less";
+@import "../bootstrap/less/close.less";
+
+// Components w/ JavaScript
+@import "../bootstrap/less/modals.less";
+@import "../bootstrap/less/tooltip.less";
+@import "../bootstrap/less/popovers.less";
+@import "../bootstrap/less/carousel.less";
+
+// Utility classes
+@import "../bootstrap/less/utilities.less";
+@import "../bootstrap/less/responsive-utilities.less";
+
+/*=============================================
+===============================================*/
+/* font-family: "BebasRegular"; */
+@font-face {
+    font-family: "BebasRegular";
+    src: url("../fonts/BebasRegular/BebasRegular.eot");
+    src: url("../fonts/BebasRegular/BebasRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/BebasRegular/BebasRegular.woff") format("woff"),
+    url("../fonts/BebasRegular/BebasRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BebasBook"; */
+@font-face {
+    font-family: "BebasBook";
+    src: url("../fonts/BebasBook/BebasBook.eot");
+    src: url("../fonts/BebasBook/BebasBook.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/BebasBook/BebasBook.woff") format("woff"),
+    url("../fonts/BebasBook/BebasBook.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BebasBold"; */
+@font-face {
+    font-family: "BebasBold";
+    src: url("../fonts/BebasBold/BebasBold.eot");
+    src: url("../fonts/BebasBold/BebasBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/BebasBold/BebasBold.woff") format("woff"),
+    url("../fonts/BebasBold/BebasBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BebasLight"; */
+@font-face {
+    font-family: "BebasLight";
+    src: url("../fonts/BebasLight/BebasLight.eot");
+    src: url("../fonts/BebasLight/BebasLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/BebasLight/BebasLight.woff") format("woff"),
+    url("../fonts/BebasLight/BebasLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "BebasThin"; */
+@font-face {
+    font-family: "BebasThin";
+    src: url("../fonts/BebasThin/BebasThin.eot");
+    src: url("../fonts/BebasThin/BebasThin.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/BebasThin/BebasThin.woff") format("woff"),
+    url("../fonts/BebasThin/BebasThin.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/*==========================================================================================
+============================================================================================*/
+.bree-serif
+{
+	font-family: "Bree Serif","Arial", serif;
+	font-weight: 400;
+}
+.ubuntu
+{
+	font-family: "Ubuntu", sans-serif;
+}
+.ubuntu-cond
+{
+	font-family: "Ubuntu Condensed", sans-serif;
+	font-weight: 400;
+}
+.wrapper
+{
+	width: 70%;
+	margin: 0 auto;
+}
+.header
+{
+  .ubuntu;
+  background-color: #fff;
+
+
+	.header-logo
+	{
+		display: inline-block;
+    vertical-align: middle;
+    padding: 5px 17px 2px;
+    border-top: 3px solid #23afc8;
+    border-bottom: 3px solid #f98561;
+    border-radius: 50%;
+    margin-top: 11px;
+	}
+  .header-logo a
+  {
+    display: inline-block;
+    text-decoration: none;
+  }
+	.header-logo-title1
+	{
+		font-family: "BebasBold";
+    font-size: 30px;
+    line-height: 22px;
+    margin: 0;
+    color: #f98561;
+    text-transform: none;
+	}
+	.header-logo-title2
+	{
+		  font-family: "BebasBold";
+    font-size: 30px;
+    line-height: 22px;
+    margin: 0;
+    color: #23afc8;
+    text-transform: none;
+	}
+  .header-navigation a
+  {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #515862;
+    padding: 30px 22px 18px;
+    border-bottom: 12px solid #fff;
+  }
+  .header-navigation .active
+  {
+    background-color: #12a3d6;
+    font-weight: 700;
+    color: #fff;
+    border-bottom: 12px solid #0080b7;
+  }
+  .header-navigation .active:after
+  {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #0080b7;
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    top:91%;
+    transform: rotate(-45deg); 
+  }
+  .header-navigation .active:hover
+  {
+    background-color: #12a3d6;
+    font-weight: 700;
+    color: #fff;
+    border-bottom: 12px solid #0080b7;
+  }
+  .header-navigation a:hover
+  {
+    background-color: #f98561;
+    border-bottom: 12px solid #f98561;
+    color: #fff;
+
+  }
+  .search
+  {
+    padding-top: 21px;
+  }
+   input[type="submit"]
+  {
+    outline: none;
+    border: none;
+    background-color: #fff;
+    background-image: url("../img/header-search.png");
+    background-repeat: no-repeat;  
+    padding: 10px 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .search-content
+  {
+     font-size: 14px;
+    line-height: 20px;
+    color: #515862;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  input[type="text"]
+  {
+    width: 150px;
+    outline: none;
+    border: none;
+  }
+
+}
+
+.carousel
+{
+  .content-img1
+  {
+    background-image: url("../img/slider-img1.jpg");
+    background-size: cover;
+    min-height: 500px;
+  }
+  .content-img2
+  {
+    background-image: url("../img/slider-img2.jpg");
+    background-size: cover;
+    min-height: 500px;
+  }
+  .content-img3
+  {
+    background-image: url("../img/slider-img3.jpg");
+    background-size: cover;
+    min-height: 500px;
+  }
+  .content-img4
+  {
+    background-image: url("../img/slider-img4.jpg");
+    background-size: cover;
+    min-height: 500px;
+  }
+  .content-img5
+  {
+    background-image: url("../img/slider-img5.jpg");
+    background-size: cover;
+    min-height: 500px;
+  }
+  .carousel-caption
+  {
+    padding-bottom: 140px;
+  }
+  .slider-title 
+  {
+    font-size: 60px;
+    line-height: 55px;
+    font-family: "BebasBold";
+    color: #cccece;
+    margin: 0;
+    padding-bottom: 18px;
+  }
+  .slider-text
+  {
+    .ubuntu;
+    font-size: 14px;
+    line-height: 18px;
+    color: #cccece;
+    font-weight: 400;
+    margin: 0;
+
+  }
+  .slider-btn a
+  {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    .ubuntu-cond;
+    color: #ffebca;
+    padding: 12px 50px;
+    background-color: #f98561;
+    border: 1px solid #98675b;
+    border-radius: 5px;
+  }
+  .slider-btn
+  {
+     padding-top: 45px;
+  }
+  .carousel-indicators
+  {
+    margin-left: -10%;
+  }
+  .carousel-indicators
+  {
+    margin-left: -10%;
+  }
+  .carousel-indicators li
+  {
+    background-color: #adadad;
+    width: 18px;
+    height: 18px;
+    border:none;
+  }
+  .carousel-indicators .active
+  {
+    background-color: #2190c1;
+    width: 19px;
+    height: 19px;
+    border: 4px solid #f98561;
+
+  }
+}
+.service
+{
+  position: relative;
+  padding-bottom: 35px;
+
+  .service-columns
+  {
+    padding-top: 50px;
+  }
+  .service-main-title
+  {
+    position: absolute;
+    top: -1707%;
+    left: 44%;
+    margin-left: -53%;
+    font-size: 22px;
+    line-height: 22px;
+    font-family: "BebasRegular";
+    color:#fff;
+    margin: 0;
+    display: inline-block;
+    padding: 6px 25px;
+    background-color: #2190c1;
+    border: 1px solid rgba(33,144,193,0.6);
+    border-radius: 5px;
+  }
+  .service-title
+  {
+    .bree-serif;
+    font-size: 17px;
+    line-height: 17px;
+    color: #515862;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 12px;
+  }
+  .service-text 
+  {
+    display: inline-block;
+    .ubuntu;
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #515862;
+    margin: 0;
+    width: 150px;
+  }
+  .service-text a
+  {
+    .ubuntu;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    color: #3e9dd1;
+  }
+}
