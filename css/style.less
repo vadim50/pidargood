@@ -109,6 +109,10 @@
 }
 /*==========================================================================================
 ============================================================================================*/
+.padding
+{
+  padding: 0;
+}
 .bree-serif
 {
 	font-family: "Bree Serif","Arial", serif;
@@ -125,7 +129,7 @@
 }
 .wrapper
 {
-	width: 70%;
+	width: 75%;
 	margin: 0 auto;
 }
 .header
@@ -308,7 +312,7 @@
     color: #ffebca;
     padding: 12px 50px;
     background-color: #f98561;
-    border: 1px solid #98675b;
+    border: 1px solid rgba(148, 94, 78, 0.52);
     border-radius: 5px;
   }
   .slider-btn
@@ -343,6 +347,7 @@
 {
   position: relative;
   padding-bottom: 35px;
+  background-color: #f4f4f4;
 
   .service-columns
   {
@@ -353,7 +358,7 @@
     position: absolute;
     top: -1707%;
     left: 44%;
-    margin-left: -53%;
+    margin-left: 8%;
     font-size: 22px;
     line-height: 22px;
     font-family: "BebasRegular";
@@ -424,8 +429,6 @@
   }
   .portfolio-content
   {
-    width: 200px;
-    height: 200px;
     background-color: #bebebe;
     border: 10px solid #fff;
     background-image: url("../img/portfolio-camera.png");
@@ -434,27 +437,30 @@
   }
   .portfolio-img1
   {
-    width: 180px;
-    height: 180px;
+    min-height: 200px;
     background-image: url("../img/portfolio-img1.jpg");
     background-position: 50% 50%;
+    background-size: cover;
     box-shadow: 0 0 101px rgba(0, 0, 0, 0.39) inset;
+    background-repeat: no-repeat;
   }
    .portfolio-img2
   {
-    width: 180px;
-    height: 180px;
+    min-height: 200px;
     background-image: url("../img/portfolio-img2.jpg");
     background-position: 50% 50%;
+    background-size: cover;
     box-shadow: 0 0 101px rgba(0, 0, 0, 0.39) inset;
+    background-repeat: no-repeat;
   }
    .portfolio-img3
   {
-    width: 180px;
-    height: 180px;
+    min-height: 200px;
     background-image: url("../img/portfolio-img3.jpg");
     background-position: 50% 50%;
+    background-size: cover;
     box-shadow: 0 0 101px rgba(0, 0, 0, 0.39) inset;
+    background-repeat: no-repeat;
   }
   .portfolio-details
   {
@@ -478,7 +484,7 @@
   {
     padding-top:80px;
     background-color: rgba(190,190,190,0.5);
-    height: 100%;
+    min-height: 200px;
     display: none;
   }
   .portfolio-content:hover .portfolio-hover
@@ -506,6 +512,314 @@
     line-height: 16px;
     font-weight: 400;
     color: #bcbcbc;
+  }
+}
+.offer
+{
+  background-color: #f4f4f4;
+  padding-top: 35px;
+  padding-bottom: 65px;
+  border-top: 1px solid #9ea5ac;
+  border-bottom: 1px solid #d9d9d9;
 
+  .offer-main-title
+  {
+    font-family: "BebasBold";
+    font-size: 40px;
+    line-height: 40px;
+    color: #2190c1;
+    margin: 0;
+    padding-bottom: 25px; 
+  }
+  .offer-main-text
+  {
+    display: inline-block;
+    .ubuntu;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0;
+    color: #515862;
+    padding-bottom: 40px;
+    width: 650px;
+  }
+  .offer-title
+  {
+    font-size: 17px;
+    line-height: 17px;
+    .bree-serif;
+    color: #2b99cc;
+    margin: 0;
+    padding-bottom: 8px;
+  }
+  .offer-text
+  {
+    font-size: 11px;
+    line-height: 15px;
+    .ubuntu;
+    font-weight: 400;
+    margin: 0;
+    color: #515862;
+    padding-bottom: 15px;
+  }
+  .offer-btn a
+  {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    background-color: #2190c1;
+    padding: 6px 9px;
+    border-radius: 5px;
+  }
+  .offer-btn 
+  {
+    text-align: right;
+  }
+}
+.testimonials
+{
+  padding-top: 30px;
+  background-color: #f4f4f4;
+
+  .testimonials-main-title
+  {
+    font-size: 27px;
+    line-height: 40px;
+    font-family: "BebasBold";
+    color: #2190c1;
+    margin: 0;
+    padding-bottom: 35px;
+  }
+  .testimonials-title
+  {
+    .bree-serif;
+    font-size: 25px;
+    line-height: 30px;
+    color: #515862;
+    margin: 0;
+  }
+  .testimonials-name
+  {
+    .ubuntu;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    color: #f98561;
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .testimonials-slider
+  {
+    position: relative;
+  }
+   input[type="radio"]
+  {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 61%;
+  }
+  label
+  {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 5px;
+    margin-bottom: -5px;
+  }
+  #btn-1:checked ~ .testimonials-control label[for="btn-1"] .control-img2
+  {
+    background-color: #f88560;
+  }
+   #btn-2:checked ~ .testimonials-control label[for="btn-2"] .control-img1
+  {
+    background-color: #f88560;
+  }
+   #btn-3:checked ~ .testimonials-control label[for="btn-3"] .control-img2
+  {
+    background-color: #f88560;
+  }
+   #btn-1:checked ~ .testimonials-control label[for="btn-1"] .control-content
+  {
+    border-bottom: 6px solid #f88560;
+  }
+   #btn-2:checked ~ .testimonials-control label[for="btn-2"] .control-content
+  {
+    border-bottom: 6px solid #f88560;
+  }
+   #btn-3:checked ~ .testimonials-control label[for="btn-3"] .control-content
+  {
+    border-bottom: 6px solid #f88560;
+  }
+   #btn-1:checked ~ .testimonials-control label[for="btn-1"] .control-content:after
+  {
+    background-color: #f88560;
+  }
+   #btn-2:checked ~ .testimonials-control label[for="btn-2"] .control-content:after
+  {
+    background-color: #f88560;
+  }
+   #btn-3:checked ~ .testimonials-control label[for="btn-3"] .control-content:after
+  {
+    background-color: #f88560;
+  }
+  .item
+  {
+    display: none;
+  }
+  #btn-1:checked ~ .items .item:nth-child(1)
+  {
+    display: block;
+  }
+  #btn-2:checked ~ .items .item:nth-child(2)
+  {
+    display: block;
+  }
+  #btn-3:checked ~ .items .item:nth-child(3)
+  {
+    display: block;
+  }
+  .control-img1
+  {
+    background-image: url("../img/testimonials-img1.png");
+    min-height: 65px;
+    width: 65px;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  .control-img2
+  {
+    background-image: url("../img/testimonials-img.png");
+    min-height: 65px;
+    width: 65px;
+    background-size: cover;
+    border-radius: 50%;
+
+  }
+  .control-content
+  {
+    position: relative;
+    border-bottom: 6px solid #c1c1c1;
+    padding-bottom: 15px;
+  }
+  .control-content:after
+  {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+   top: 96%;
+    left: 50%;
+    margin-left: -2%;
+    background-color: #c1c1c1;                                              
+    transform: rotate(-45deg); 
+  }
+}
+.footer
+{
+  background-color: #2e3e4f;
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+  .footer-title
+  {
+    font-size: 30px;
+    line-height: 26px;
+    font-family: "BebasRegular";
+    color: #f98561;
+    margin: 0;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+  }
+  .footer-text
+  {
+    .ubuntu;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #a3afb2;
+    margin: 0;
+  }
+  .footer-links
+  {
+    .ubuntu;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #2190c1;
+    margin: 0;
+    text-decoration: none;
+  }
+  .footer-line
+  {
+    height: 1px;
+    width: 90%;
+    background-color: #556270;
+    margin: 10px 0;
+  }
+  label[for="mail"]
+  {
+    .ubuntu;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #2190c1;
+  }
+  input[id="mail"]
+  {
+    outline: none;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 3px;
+    width: 100%;
+  }
+  input[type="submit"]
+  {
+    outline: none;
+    border: none;
+    font-size: 13px;
+    line-height: 20px;
+    color: #fff;
+    background-color: #2190c1;
+    padding: 5px 15px;
+    border-radius: 5px
+  }
+  .footer-btn 
+  {
+    padding-top: 15px;
+    margin: 0;
+    text-align: right;
+  }
+  .footer-photo
+  {
+    background-color: #fff;
+    min-height: 56px;
+    width: 65px;
+  }
+  .footer-contact
+  {
+    .ubuntu;
+    font-weight: 400;
+    color: #a3afb2;
+    font-size: 13px;
+    line-height: 15px;
+    margin: 0;
+  }
+  img
+  {
+    padding-bottom: 34px;
+  }
+  .footer-mail
+  {
+     .ubuntu;
+    font-weight: 400;
+    color: #a3afb2;
+    font-size: 13px;
+    line-height: 15px;
+    margin: 0;
+    text-decoration: none;
   }
 }
