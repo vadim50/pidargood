@@ -22,7 +22,7 @@
   </head>
   <body>
     <div class="main-content">
-          <header class="header">
+      <header class="header">
         <div class="wrapper">
           <div class="container-fluid">
             <div class="row">
@@ -56,8 +56,140 @@
           </div>
         </div>
       </header>
+      <div class="portfolio-main">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2 class="portfolio-main-title">
+              About us
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="wrapper">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2 class="contact-title">GET IN TOUCH</h2>
+              <div class="contact-text">
+                Lorem ipsum dolor sit amet, dui ac bibendum
+                fringilla, massa augue mattis enim, quis
+                volutpat augue nisi vitae nibh. Proin
+                nibh tortor, rutrum luctus euismod
+                eu, rutrum eget nunc. Nam commodo
+                tellus quis ante tempus quis auctor
+                enim suscipit. Donec sit amet feugiat
+                justo. Nulla vel nibh et erat consequat
+                sollicitudin. Vivamus egestas erat ac arcu
+                sagittis in tincidunt purus pharetra. Maecenas
+                viverra suscipit arcu, ac adipiscing
+                odio vehicula nec. Vestibulum non enim ac dui
+                interdum tempus nam tortor odio.
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-5">
+                <form action="get" class="form">
+                  <h3 class="form-title">
+                  Lorem ipsum dolor sit amet, consectetur <span>*</span> sign amentu kurmanci.
+                  </h3>
+                  <p><label for="name">NAME <span>*</span> </label></p>
+                  <input type="text" id="name" name="forname">
+                  <p><label for="mail"> E-MAIL ADDRESS <span>*</span></label></p>
+                  <input type="text" id="mail" name="formail">
+                  <p><label for="subject">SUBJECT <span>*</span></label></p>
+                  <input type="text" id="subject" name="forsubject">
+                  <p><label for="message">MESSAGE <span>*</span></label></p>
+                  <textarea name="formessage" id="message">  </textarea>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-6 padding">
+                        <img src="img/contact-code-img.png" alt="Goodgood">
+                      </div>
+                      <div class="col-md-6 padding">
+                        <label for="code">Enter the code<span>*</span></label>
+                        <input type="text" id="code" name="forcode">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 text-left padding">
+                        <input type="submit" value="Send">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-2">
+                <div class="contact-vertical">
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-2 padding text-center">
+                      <div class="contact-icons">
+                        <img class="contact-icon" src="img/footer-telephone.png" alt="Goodgood">
+                        <img class="contact-icon" src="img/contact-icon.png" alt="Goodgood">
+                        <img class="contact-icon" src="img/footer-mail.png" alt="GoodGood">
+                      </div>
+                    </div>
+                    <div class="col-md-10 padding">
+                      <div class="contact-phone-text">
+                        <p>
+                          <span> Office:</span> +1 (000) 123-4567
+                        </p>
+                        <p>
+                          <span>Mobil:</span> +1 (000) 123-4567
+                        </p>
+                      </div>
+                      <div class="contact-mobile-text">
+                        <p>
+                          Lorem ipsum dolar sit amet
+                        </p>
+                        <p>
+                          New York - United States
+                        </p>
+                      </div>
+                      <div class="contact-mail-text">
+                        <a href="#">
+                          hakan.ertann@gmail.com
+                        </a>
+                        <a href="#">
+                          www.hakan-ertan.com
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 padding text-center">
+                      <div class="contact-map">
+                         <div class="big-map" id="map-canvas">
+                      </div>
+                    </div>
+                    <p class="contact-social-title">
+                      FOLLOW US ON SOCIAL MEDIA
+                    </p>
+                    <div class="contact-social">
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-youtube"></i></a>
+                      <a href="#"><i class="fa fa-vimeo"></i></a>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                      <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
       <!-- ================== FOOTER -->
-          <footer class="footer">
+      <footer class="footer">
         <div class="wrapper">
           <div class="container-fluid">
             <div class="row">
@@ -223,9 +355,31 @@
         </div>
       </footer>
     </div>
-         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false">
+        </script>
+       <script>
+
+        function initialize() {
+        var mapOptions = {
+        zoom: 15,scrollwheel: false,
+        center: new google.maps.LatLng(43.15183356530098,-75.82431077957153)
+        }
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+        mapOptions);
+        var image = "img/contact-icon.png";
+        var myLatLng = new google.maps.LatLng(43.15183356530098,-75.82431077957153);
+        var beachMarker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        icon: image
+        });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+        
   </body>
 </html>
